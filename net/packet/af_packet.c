@@ -1735,9 +1735,6 @@ out:
 		kfree(rollover);
 		po->rollover = NULL;
 	}
-
-out:
-	kfree(rollover);
 	mutex_unlock(&fanout_mutex);
 	return err;
 }
